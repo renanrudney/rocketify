@@ -15,6 +15,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+ Route::resource('launcher', 'LauncherController');
+
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
