@@ -15,6 +15,10 @@ class DataController extends Controller
     public function index()
     {
       $launchers = Data::all();
+      //Quem sabe um dia, abaixo
+      // $url="https://launchlibrary.net/1.4/launch?startdate=2018-10-21";
+      // $json = file_get_contents($url);
+      // $launchers = json_decode($json, TRUE);
       // return $launchers;
        return view('launcher.index',compact('launchers'));
     }
