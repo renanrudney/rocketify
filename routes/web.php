@@ -11,13 +11,15 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('launcher.index');
+// });
 
- Route::resource('launcher', 'LauncherController');
+ Route::resource('launcher', 'DataController');
+ // Route::get('launcher/{id}', 'DataController@show')->name('launcher');
+ Route::get('launcher/{id}', 'DataController@show')->name('launcher');
 
 
-Route::group(['prefix' => 'admin'], function () {
-    Voyager::routes();
-});
+// Route::group(['prefix' => 'admin'], function () {
+//     Voyager::routes();
+// });

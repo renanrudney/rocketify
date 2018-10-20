@@ -3,16 +3,12 @@
   max-height: 160px;
 }
 
-.launcher-card{
+/* .launcher-card{
   margin-top: 20px;
-}
+} */
 .side-off{
-  margin-left: 270px;
-}
-
-body {
-    font-family: "Lato", sans-serif;
-    background-color: #F5F5F5;
+  margin-left: 100px;
+  margin-top: 20px;
 }
 
 .sidenav {
@@ -20,7 +16,7 @@ body {
     width: 220px;
     position: fixed;
     z-index: 1;
-    top: 0;
+    top: 56px;
     left: 0;
     background-color: white;
     overflow-x: hidden;

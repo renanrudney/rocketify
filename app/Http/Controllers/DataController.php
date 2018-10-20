@@ -3,8 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Data;
 
-class LauncherController extends Controller
+class DataController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,7 +14,9 @@ class LauncherController extends Controller
      */
     public function index()
     {
-       return view('launcher.index');
+      $launchers = Data::all();
+      // return $launchers;
+       return view('launcher.index',compact('launchers'));
     }
 
     /**
@@ -45,7 +48,13 @@ class LauncherController extends Controller
      */
     public function show($id)
     {
-        //
+      // $launchers = Data::all();
+      // return $launchers;
+
+      // $launcher = $id;
+      $launcher = Data::find($id);
+      return view('launcher.show', compact('launcher'));
+      // return $launcher;
     }
 
     /**
