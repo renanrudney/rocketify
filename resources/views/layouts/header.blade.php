@@ -3,7 +3,7 @@
     <li class="nav-item">
         <a href="{{ url('/') }}" class=" nav-link text-white">
             <img src="{{ asset('rocketfy.png') }}" class="logo-img">
-            {{-- <strong> Rocketfy </strong> --}}
+            {{-- <strong> Rocketify </strong> --}}
         </a>
 
     </li>

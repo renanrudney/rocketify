@@ -17,7 +17,7 @@
     <nav class="navbar navbar-default navbar-fixed-top transp-nav">
         <div class="container">
             <a class="text-danger" href="{{url('/launcher')}}"><img src="{{ asset('rocketfy.png') }}" class="logo-img">
-               <strong>Rocketfy </strong>
+               <strong>Rocketify </strong>
             </a>
         </div>
     </nav>
