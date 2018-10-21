@@ -11,9 +11,9 @@
 |
 */
 
-// Route::get('/', function () {
-//     return view('launcher.index');
-// });
+Route::get('/', function () {
+    return redirect(route('launcher.index'));
+});
 
  Route::resource('launcher', 'DataController');
  // Route::get('launcher/{id}', 'DataController@show')->name('launcher');

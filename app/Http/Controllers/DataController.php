@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Data;
+use App\Local;
+use Illuminate\Support\Facades\DB;
 
 class DataController extends Controller
 {
@@ -57,8 +59,11 @@ class DataController extends Controller
 
       // $launcher = $id;
       $launcher = Data::find($id);
-      return view('launcher.show', compact('launcher'));
-      // return $launcher;
+      $def = $launcher->countryCode;
+      // $local = Local::all();
+      $local = DB::table('local')->where('countryCode', $def)->get();
+      // dd ($local);
+      return view('launcher.show', compact('launcher', 'local'));
     }
 
     /**

@@ -10,4 +10,5 @@ class Data extends Model
   {
       return 'id';
   }
+    protected $table = 'data';
 }

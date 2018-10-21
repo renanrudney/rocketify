@@ -88,6 +88,7 @@
                             </div>
                             <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
                                 <div class="card-body">
+                                  <i>Recommend local to watch <img src="http://maps.google.com/mapfiles/ms/icons/yellow-dot.png" alt=""></i>  
                                     <div id="map" style="width:100%;height:400px;"></div>
                                 </div>
                             </div>
@@ -99,36 +100,48 @@
       @endsection
       @section('footer')
     <script>
-            function initMap() {
-        var myLatLng = {lat: {{ $launcher->latitude }}, lng: {{ $launcher->longitude }}};
+    function initMap() {
+              
+        var defaultLatLng = {lat: {{ $launcher->latitude }}, lng: {{ $launcher->longitude }}};
 
         // Create a map object and specify the DOM element
         // for display.
         var map = new google.maps.Map(document.getElementById('map'), {
-          center: myLatLng,
-          zoom: 5
+          center: defaultLatLng,
+          zoom: 9
         });
-
         // Create a marker and set its position.
+        @foreach ($local as $lc)
+        var myLatLng = {lat: {{ $lc->latitude }}, lng: {{ $lc->longitude }}};  
         var marker = new google.maps.Marker({
+          icon : 'http://maps.google.com/mapfiles/ms/icons/yellow-dot.png',
           map: map,
           position: myLatLng,
-          title: 'Hello World!'
+          title: '{{ $lc->local }}'
         });
-
+        @endforeach
+        
+        var marker = new google.maps.Marker({
+          icon : 'http://maps.google.com/mapfiles/ms/icons/red-dot.png',
+          map: map,
+          position: defaultLatLng,
+          title: '{{ $launcher->nomeFoguete }}'
+        });
+        
+                
         map.addListener('center_changed', function() {
-          // 3 seconds after the center of the map has changed, pan back to the
+          // 10 seconds after the center of the map has changed, pan back to the
           // marker.
           window.setTimeout(function() {
             map.panTo(marker.getPosition());
-          }, 3000);
+          }, 10000);
         });
-
+        
         marker.addListener('click', function() {
           map.setZoom(12);
           map.setCenter(marker.getPosition());
         });
-
+        
       }
     </script>
 
