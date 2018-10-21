@@ -24,7 +24,7 @@
                 And it's closer than you<br>
                 may think!</h1>
             <p class="text-white">Watch space rockets launching, learn more <br>
-                about them and get lots of <strong class="text-info">cool info</strong>.</p>
+                about them and get lots of <strong class="text-primary">cool info</strong>.</p>
                 <a class="btn btn-light" href="{{url('/launcher')}}">🚀 Launchers</a>
                 {{-- <button type="button" class="btn btn-light">🚀 Launchers</button> --}}
         </div>
