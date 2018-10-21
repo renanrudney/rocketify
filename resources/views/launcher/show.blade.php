@@ -1,44 +1,36 @@
 @extends('app')
 @section('main-content')
 
-  {{-- <div id="ImageContainer">
-  <img src="http://placehold.it/1000x600" class="Image">
-</div> --}}
-
     <div class="container">
-      <div class="row epic-margin">
-        <div class="col-md-6">
-          <div class="image-rocket text-center" id="ImageContainer">
-            <img src="{{ $launcher->imageURL }}" alt="" class="Image">
-          </div>
-        </div>
-        <div class="col-md-6 rem">
-          <div class="row text">
-            <div class="col-md-12">
-              <h2 class="text-secondary">{{ $launcher->nomeFoguete }}</h2>
+
+        <div class="row epic-margin">
+            <div class="col-md-6">
+                <div class="image-rocket text-center" id="ImageContainer">
+                    <img src="{{ $launcher->imageURL }}" alt="" class="Image">
+                </div>
             </div>
-          </div>
-        <div class="row">
-          <div class="col-md-12">
-            <i class="fas fa-calendar-alt text-secondary"></i>
-            <span class="data-launche text-secondary">{{ $launcher->windowstart }}</span>
-          <br></div>
-        </div>
-          <div class="row">
-            <div class="col-md-12">
-              <i class="fas fa-map-marker-alt text-secondary"></i>
-              <span class="local-launche text-secondary ">{{ $launcher->cidade }}</span>
-            <br></div>
-          </div>
-          {{-- <div class="row">
-            <div class="col-md-12">
-              <br><button type="button" class="btn btn-secondary">Add Calendar</button>
+            <div class="col-md-6 rem">
+                <div class="row text">
+                    <div class="col-md-12">
+                        <h2 class="text-secondary">{{ $launcher->nomeFoguete }}</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <i class="fas fa-calendar-alt text-secondary"></i>
+                        <span class="data-launche text-secondary">{{ $launcher->windowstart }}</span>
+                    <br>
+                </div>
             </div>
-          </div> --}}
+            <div class="row">
+                <div class="col-md-12">
+                <i class="fas fa-map-marker-alt text-secondary"></i>
+                <span class="local-launche text-secondary ">{{ $launcher->cidade }}</span>
+                <br></div>
+            </div>
+            </div>
         </div>
 
-        </div>
-        {{-- <div class="block_1 hline-bottom"></div> --}}
         <div clas="row">
             <div class="d-flex justify-content-center">
                 <div class="col-md-10">
@@ -61,23 +53,6 @@
                             </div>
                         </div>
                       @endif
-{{--
-                        <div class="card">
-                                <div class="card-header" id="headingThree">
-                                    <h5 class="mb-0">
-                                    <button class="btn btn-link  text-secondary" type="button" data-toggle="collapse" data-target="#company" aria-expanded="false" aria-controls="collapseThree">
-                                        <i class="fas fa-building"></i> The company
-                                    </button>
-                                    </h5>
-                                </div>
-                                <div id="company" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                                    <div class="card-body">
-                                        {{ $launcher->nomeBase }}
-                                    </div>
-                                </div>
-                            </div>
-                        </div> --}}
-
                         <div class="card">
                             <div class="card-header" id="headingThree">
                                 <h5 class="mb-0">
@@ -88,7 +63,7 @@
                             </div>
                             <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
                                 <div class="card-body">
-                                  <i>Recommend local to watch <img src="http://maps.google.com/mapfiles/ms/icons/yellow-dot.png" alt=""></i>  
+                                  <i>Recommend local to watch <img src="http://maps.google.com/mapfiles/ms/icons/yellow-dot.png" alt=""></i>
                                     <div id="map" style="width:100%;height:400px;"></div>
                                 </div>
                             </div>
@@ -101,7 +76,7 @@
       @section('footer')
     <script>
     function initMap() {
-              
+
         var defaultLatLng = {lat: {{ $launcher->latitude }}, lng: {{ $launcher->longitude }}};
 
         // Create a map object and specify the DOM element
@@ -112,7 +87,7 @@
         });
         // Create a marker and set its position.
         @foreach ($local as $lc)
-        var myLatLng = {lat: {{ $lc->latitude }}, lng: {{ $lc->longitude }}};  
+        var myLatLng = {lat: {{ $lc->latitude }}, lng: {{ $lc->longitude }}};
         var marker = new google.maps.Marker({
           icon : 'http://maps.google.com/mapfiles/ms/icons/yellow-dot.png',
           map: map,
@@ -120,15 +95,15 @@
           title: '{{ $lc->local }}'
         });
         @endforeach
-        
+
         var marker = new google.maps.Marker({
           icon : 'http://maps.google.com/mapfiles/ms/icons/red-dot.png',
           map: map,
           position: defaultLatLng,
           title: '{{ $launcher->nomeFoguete }}'
         });
-        
-                
+
+
         map.addListener('center_changed', function() {
           // 10 seconds after the center of the map has changed, pan back to the
           // marker.
@@ -136,12 +111,12 @@
             map.panTo(marker.getPosition());
           }, 10000);
         });
-        
+
         marker.addListener('click', function() {
           map.setZoom(12);
           map.setCenter(marker.getPosition());
         });
-        
+
       }
     </script>
 

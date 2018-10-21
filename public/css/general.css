@@ -1,13 +1,13 @@
-.blue-nav{
-            background-color:#0f1166;
-            color:white;
-            /* height: 3em; */
+        .blue-nav {
+            background: linear-gradient(to right, #141e30, #243b55);
+            color: white;
             width: 100%;
         }
+
         /* a{
             color:white;
         } */
-        .logo-img{
+        .logo-img {
             max-width: 45px;
         }
 
@@ -15,22 +15,32 @@
             font-family: "Lato", sans-serif;
             background-color: #F5F5F5;
         }
-        .image-rocket img{
-          max-width: 100%;
-        }
-        .epic-margin{
-          margin-top: 20px;
-          margin-bottom: 20px;
-        }
-@media (min-width:768px) {
-  .rem{
-      top: 6rem;
-    }
-}
-h2{
-font-family: 'Montserrat', sans-serif !important;
-}
 
-img.Image {max-height: 100%; display: inline-block }
-div#ImageContainer {     width: 467px;
-    height: 372px; }
+        .image-rocket img {
+            max-width: 100%;
+        }
+
+        .epic-margin {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        @media (min-width:768px) {
+            .rem {
+                top: 6rem;
+            }
+        }
+
+        h2 {
+            font-family: 'Montserrat', sans-serif !important;
+        }
+
+        img.Image {
+            max-height: 100%;
+            display: inline-block
+        }
+
+        div#ImageContainer {
+            width: 467px;
+            height: 372px;
+        }
