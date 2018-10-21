@@ -12,16 +12,15 @@
   </nav>
 
   <body>
-    <div class="d-flex align-items-center">
-      <h1 class="text-white">It's not rocket science.
-        And it's closer than you
-        may think!
-    </div>
-    {{-- <div class="d-flex justify-content-center">
+    <div class="container">
+      <div>
+      <h1 class="text-white">It's n̶o̶t̶ rocket science.<br>
+        And it's closer than you<br>
+        may think!</h1>
         <p class="text-white">Watch space rockets launching, learn more </br>
         about them and get lots of cool info.</p>
-    </div> --}}
-
+    </div>
+  </div>
   </body>
 
 </html>
