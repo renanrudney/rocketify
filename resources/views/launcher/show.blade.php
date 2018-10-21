@@ -41,7 +41,7 @@
                             <div class="card-header" id="headingOne">
                                 <h5 class="mb-0">
                                 <button class="btn btn-link collapsed text-secondary" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        <i class="fas fa-space-shuttle"></i> About Rocket
+                                        <i class="fas fa-space-shuttle"></i> About the Rocket
                                 </button>
                                 </h5>
                             </div>
@@ -63,7 +63,7 @@
                             </div>
                             <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
                                 <div class="card-body">
-                                  <i>Recommend local to watch <img src="http://maps.google.com/mapfiles/ms/icons/yellow-dot.png" alt=""></i>
+                                  <i>Best's places to watch <img src="http://maps.google.com/mapfiles/ms/icons/yellow-dot.png" alt=""></i>
                                     <div id="map" style="width:100%;height:400px;"></div>
                                 </div>
                             </div>
