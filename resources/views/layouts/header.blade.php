@@ -8,11 +8,9 @@
 
     </li>
     <li class="nav-item">
-        <a class="nav-link text-white" href="{{ route('launcher.index') }}">Launchers</a>
+        <a class="nav-link text-white" href="{{ route('launcher.index') }}">Launchings</a>
     </li>
     <li class="nav-item">
         <a class=" nav-link text-white" href="{{ url('/info') }}">Dashboard</a>
     </li>
 </ul>
-
-

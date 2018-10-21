@@ -63,7 +63,7 @@
                             </div>
                             <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
                                 <div class="card-body">
-                                  <i>Best's places to watch <img src="http://maps.google.com/mapfiles/ms/icons/yellow-dot.png" alt=""></i>
+                                  <i>Bests places to watch <img src="http://maps.google.com/mapfiles/ms/icons/yellow-dot.png" alt=""></i>
                                     <div id="map" style="width:100%;height:400px;"></div>
                                 </div>
                             </div>

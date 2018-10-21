@@ -29,7 +29,7 @@
                 may think!</h1>
             <p class="text-white">Watch space rockets launching, learn more <br>
                 about them and get lots of <strong class="text-primary">cool info</strong>.</p>
-                <a class="btn btn-light" href="{{url('/launcher')}}">🚀 Launchers</a>
+                <a class="btn btn-light" href="{{url('/launcher')}}">🚀 Know more</a>
         </div>
 
     </div>
