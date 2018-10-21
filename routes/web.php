@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return redirect(route('launcher.index'));
+    return  view('welcome');
 });
 
  Route::resource('launcher', 'DataController');
