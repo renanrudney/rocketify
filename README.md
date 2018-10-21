@@ -1,4 +1,4 @@
-# Rocketfy
+# Rocketify
 
 ##SpaceAppsChallange Nasa
 
