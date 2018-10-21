@@ -2,8 +2,8 @@
 <ul class="nav blue-nav align-items-center">
     <li class="nav-item">
         <a href="{{ url('/') }}" class=" nav-link text-white">
-            <img src="{{ asset('nasa-logo.png') }}" class="logo-img">
-            <strong> Rocketfy </strong>
+            <img src="{{ asset('rocketfy.png') }}" class="logo-img">
+            {{-- <strong> Rocketfy </strong> --}}
         </a>
 
     </li>

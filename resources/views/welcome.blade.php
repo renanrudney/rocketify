@@ -11,12 +11,12 @@
 
 
     <video id="background"  width="100%" autoplay loop muted>
-        <source src="{{asset('nigth.mp4') }}" type="video/mp4">
+        <source src="{{asset('night.mp4') }}" type="video/mp4">
     </video>
 
     <nav class="navbar navbar-default navbar-fixed-top transp-nav">
         <div class="container">
-            <a class="text-white" href="{{url('/launcher')}}"><img src="{{ asset('nasa-logo.png') }}" class="logo-img">
+            <a class="text-danger" href="{{url('/launcher')}}"><img src="{{ asset('rocketfy.png') }}" class="logo-img">
                <strong>Rocketfy </strong>
             </a>
         </div>
