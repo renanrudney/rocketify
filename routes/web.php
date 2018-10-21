@@ -26,6 +26,3 @@ Route::get('/maps', function () {
  Route::get('launcher/{id}', 'DataController@show')->name('launcher');
 
 
-// Route::group(['prefix' => 'admin'], function () {
-//     Voyager::routes();
-// });

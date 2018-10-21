@@ -6,7 +6,9 @@
     <link rel="stylesheet" href="{{ asset('css/home.css') }}">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   </head>
-   <body>
+
+<body>
+
 
     <video id="background"  width="100%" autoplay loop muted>
         <source src="{{asset('nigth.mp4') }}" type="video/mp4">
@@ -14,7 +16,9 @@
 
     <nav class="navbar navbar-default navbar-fixed-top transp-nav">
         <div class="container">
-            <a class="text-white" href="{{url('/launcher')}}"><img src="{{ asset('nasa-logo.png') }}" class="logo-img">Rocketfy</a>
+            <a class="text-white" href="{{url('/launcher')}}"><img src="{{ asset('nasa-logo.png') }}" class="logo-img">
+               <strong>Rocketfy </strong>
+            </a>
         </div>
     </nav>
 
@@ -26,7 +30,6 @@
             <p class="text-white">Watch space rockets launching, learn more <br>
                 about them and get lots of <strong class="text-primary">cool info</strong>.</p>
                 <a class="btn btn-light" href="{{url('/launcher')}}">🚀 Launchers</a>
-                {{-- <button type="button" class="btn btn-light">🚀 Launchers</button> --}}
         </div>
 
     </div>
