@@ -14,6 +14,12 @@
 Route::get('/', function () {
     return  view('welcome');
 });
+Route::get('/info', function () {
+    return  view('info');
+});
+Route::get('/maps', function () {
+    return  view('maps');
+});
 
  Route::resource('launcher', 'DataController');
  // Route::get('launcher/{id}', 'DataController@show')->name('launcher');
