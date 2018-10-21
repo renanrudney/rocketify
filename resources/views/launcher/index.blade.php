@@ -43,5 +43,11 @@
   </div>
   </div>
 @endforeach
+
+
+  <div class="clearfix row side-off d-flex justify-content-center">
+    {{ $launchers->links() }}
+  </div>
+
 </section>
 @endsection

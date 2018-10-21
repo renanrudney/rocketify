@@ -16,7 +16,7 @@ class DataController extends Controller
      */
     public function index()
     {
-      $launchers = Data::all();
+      $launchers = Data::paginate(15);
       //Quem sabe um dia, abaixo
       // $url="https://launchlibrary.net/1.4/launch?startdate=2018-10-21";
       // $json = file_get_contents($url);
