@@ -46,9 +46,10 @@
 
 **Languages/FrameWorks:**
 
--   Laravel 5
--   Boostrap
-
+- Laravel 5
+- Bootstrap
+- R
+- Python
 **DataBase:**
 
 -   Mysql with Amazon RDS
