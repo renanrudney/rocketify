@@ -4,7 +4,9 @@
 
 **Challenge:** 3D Challenge - When will the next rocket be released.
 
-![Cross-platform application that provides release information centrally](https://github.com/xTheMay/rocketify/rocketfyPro.png)
+💡 **Cross-platform application that provides release information centrally**  
+
+![](https://github.com/xTheMay/rocketify/blob/master/rocketfyPro.png)
 
 📽️ **Video Application**:
 [Rocketfy](https://www.useloom.com/share/42e5de039e0d4cd4ae08e0bd65fb4eb7)  
@@ -34,6 +36,11 @@
 🎨 **UX/UI Designer**:
 
 1. Artur Henrique Gomes Janz - [Linkedin](https://www.linkedin.com/in/arturjanz/) & [Behance](https://www.behance.net/ArturJanz)
+
+## 🗺️ **Local**:
+🏬 [Jupter](https://jupter.co/)  
+**Country:** - 🇧🇷  
+**Address:** Curitiba/Paraná
 
 ## 💻 Technologies:
 
