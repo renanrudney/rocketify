@@ -55,6 +55,6 @@
 
 -   Mysql with Amazon RDS
 
-**Service**
+**Server**
 
 -   Amazon Elastic Compute Cloud 2
