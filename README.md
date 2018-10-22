@@ -12,7 +12,7 @@
 [Rocketfy](https://www.useloom.com/share/42e5de039e0d4cd4ae08e0bd65fb4eb7)  
 🎤 **Pitch**:
 
--   [PDF](https://github.com/xTheMay/rocketify/NasaSpaceappsChallenge-EquipeRocket.pdf)
+-   [PDF](https://github.com/xTheMay/rocketify/blob/master/NasaSpaceappsChallenge-EquipeRocket.pdf)
 -   [Video](https://www.youtube.com/watch?v=3ZoZ0uCcHCw) - start at **1:13:13**
 
 📜 **Documentation:** [Space Apps Chanllenger 2018](https://2018.spaceappschallenge.org/challenges/can-you-build/when-next-rocket-launch/teams/equipe-rocket/members)
