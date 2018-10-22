@@ -49,7 +49,8 @@
 - Laravel 5
 - Bootstrap
 - R
-- Python
+- Python  
+
 **DataBase:**
 
 -   Mysql with Amazon RDS
