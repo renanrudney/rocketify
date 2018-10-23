@@ -7,8 +7,9 @@
 💡 **Cross-platform application that provides release information centrally**  
 
 ![](https://github.com/xTheMay/rocketify/blob/master/rocketfyPro.png)
+![](https://github.com/xTheMay/rocketify/blob/master/prot.png)
 
-📽️ **Video Application**:
+📽️ **Video MVP Web Application**:
 [Rocketfy](https://www.useloom.com/share/42e5de039e0d4cd4ae08e0bd65fb4eb7)  
 🎤 **Pitch**:
 
